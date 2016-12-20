@@ -5,8 +5,8 @@ function add_menu_icons_styles(){
 ?>
  
 <style>
-#menu-posts-project .dashicons-admin-post:before {
-    content: '\f319';
+#menu-posts-show .dashicons-admin-post:before {
+    content: '\f126';
 }
 </style>
  
@@ -16,23 +16,23 @@ add_action( 'admin_head', 'add_menu_icons_styles' );
 
 
 //Register Custom Post Types
-add_action( 'init', 'register_cpt_project' );
+add_action( 'init', 'register_cpt_show' );
 
-function register_cpt_project() {
+function register_cpt_show() {
 
     $labels = array( 
-        'name' => _x( 'Projects', 'project' ),
-        'singular_name' => _x( 'Project', 'project' ),
-        'add_new' => _x( 'Add New', 'project' ),
-        'add_new_item' => _x( 'Add New Project', 'project' ),
-        'edit_item' => _x( 'Edit Project', 'project' ),
-        'new_item' => _x( 'New Project', 'project' ),
-        'view_item' => _x( 'View Project', 'project' ),
-        'search_items' => _x( 'Search Projects', 'project' ),
-        'not_found' => _x( 'No projects found', 'project' ),
-        'not_found_in_trash' => _x( 'No projects found in Trash', 'project' ),
-        'parent_item_colon' => _x( 'Parent Project:', 'project' ),
-        'menu_name' => _x( 'Projects', 'project' ),
+        'name' => _x( 'Shows', 'show' ),
+        'singular_name' => _x( 'Show', 'show' ),
+        'add_new' => _x( 'Add New', 'show' ),
+        'add_new_item' => _x( 'Add New Show', 'show' ),
+        'edit_item' => _x( 'Edit Show', 'show' ),
+        'new_item' => _x( 'New Show', 'show' ),
+        'view_item' => _x( 'View Show', 'show' ),
+        'search_items' => _x( 'Search Shows', 'show' ),
+        'not_found' => _x( 'No shows found', 'show' ),
+        'not_found_in_trash' => _x( 'No shows found in Trash', 'show' ),
+        'parent_item_colon' => _x( 'Parent Show:', 'show' ),
+        'menu_name' => _x( 'Shows', 'show' ),
     );
 
     $args = array( 
@@ -56,5 +56,5 @@ function register_cpt_project() {
         'capability_type' => 'post'
     );
 
-    register_post_type( 'project', $args );
+    register_post_type( 'show', $args );
 }

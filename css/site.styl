@@ -40,13 +40,13 @@ $color-white = rgb(255, 255, 255)
 
 $color-red = rgb(231, 62, 72)
 $color-blue = rgb(27, 78, 147)
+$color-yellow = rgb(232, 229, 64)
 
 // ******************************************************
 
 // BASIC
 
 html
-  background-color: $color-white
   color: $color-black
   font-family: 'Graphik'
 
@@ -65,11 +65,14 @@ h1, h2, h3, h4, h5, h6
   font-weight: bold
   font-style: italic
 
+h1, h2
+  letter-spacing: 1px
+
 // ******************************************************
 
 // MEDIA QUERIES
 
-$gutter = 14px
+$gutter = 18px
 
 $margin-micro = ($gutter / 3)
 $margin-tiny = ($gutter / 2)
@@ -78,16 +81,37 @@ $margin-basic = ($gutter * 2)
 $margin-mid = ($gutter * 3.5)
 $margin-large = ($gutter * 5)
 
-$font-size-basic = 12px
-$font-size-h1 = 28px
-$font-size-h2 = 21px
-$font-size-h3 = 16px
+$font-size-basic = 22px
+$font-size-h1 = 38px //28
+$font-size-h2 = 34px
+$font-size-h3 = 28px
 
 grid(96%, $gutter, s)
 
 space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
 font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
+
+.yellow-shadow
+  text-shadow: 2px 2px 0 $color-red
+
+// HEADROOM
+.headroom--pinned
+  display: block
+
+.headroom--unpinned
+  transform: translateY(-100%)
+
+// HEADER
+#header
+  color: $color-white
+  width: 100%
+  position: fixed
+  top: 0
+  z-index: 1000
+  transition: transform 300ms
+  background: $color-blue
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75)
 
 @import 'responsive/mobile'
 
@@ -154,3 +178,6 @@ font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
 @media screen and (min-width: 1920px)
 
   grid(1800px)
+
+
+

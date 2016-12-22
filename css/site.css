@@ -879,7 +879,6 @@ p a {
   text-decoration: underline;
 }
 html {
-  background-color: #fff;
   color: #000;
   font-family: 'Graphik';
 }
@@ -902,11 +901,15 @@ h6 {
   font-weight: bold;
   font-style: italic;
 }
+h1,
+h2 {
+  letter-spacing: 1px;
+}
 .container {
   width: 96%;
 }
 .grid-item {
-  padding: 0 7px;
+  padding: 0 9px;
 }
 .grid-row .offset-s-0 {
   margin-left: 0%;
@@ -1089,91 +1092,114 @@ h6 {
   max-height: 100%;
 }
 .margin-top-micro {
-  margin-top: 4.666666666666667px;
+  margin-top: 6px;
 }
 .margin-bottom-micro {
-  margin-bottom: 4.666666666666667px;
+  margin-bottom: 6px;
 }
 .padding-top-micro {
-  padding-top: 4.666666666666667px;
+  padding-top: 6px;
 }
 .padding-bottom-micro {
-  padding-bottom: 4.666666666666667px;
+  padding-bottom: 6px;
 }
 .margin-top-tiny {
-  margin-top: 7px;
+  margin-top: 9px;
 }
 .margin-bottom-tiny {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .padding-top-tiny {
-  padding-top: 7px;
+  padding-top: 9px;
 }
 .padding-bottom-tiny {
-  padding-bottom: 7px;
+  padding-bottom: 9px;
 }
 .margin-top-small {
-  margin-top: 14px;
+  margin-top: 18px;
 }
 .margin-bottom-small {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .padding-top-small {
-  padding-top: 14px;
+  padding-top: 18px;
 }
 .padding-bottom-small {
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 .margin-top-basic {
-  margin-top: 28px;
+  margin-top: 36px;
 }
 .margin-bottom-basic {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 .padding-top-basic {
-  padding-top: 28px;
+  padding-top: 36px;
 }
 .padding-bottom-basic {
-  padding-bottom: 28px;
+  padding-bottom: 36px;
 }
 .margin-top-mid {
-  margin-top: 49px;
+  margin-top: 63px;
 }
 .margin-bottom-mid {
-  margin-bottom: 49px;
+  margin-bottom: 63px;
 }
 .padding-top-mid {
-  padding-top: 49px;
+  padding-top: 63px;
 }
 .padding-bottom-mid {
-  padding-bottom: 49px;
+  padding-bottom: 63px;
 }
 .margin-top-large {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 .margin-bottom-large {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 .padding-top-large {
-  padding-top: 70px;
+  padding-top: 90px;
 }
 .padding-bottom-large {
-  padding-bottom: 70px;
+  padding-bottom: 90px;
 }
 html {
-  font-size: 12px;
+  font-size: 22px;
 }
 h1,
 .font-size-h1 {
-  font-size: 28px;
+  font-size: 38px;
 }
 h2,
 .font-size-h2 {
-  font-size: 21px;
+  font-size: 34px;
 }
 h3,
 .font-size-h3 {
-  font-size: 16px;
+  font-size: 28px;
+}
+.yellow-shadow {
+  text-shadow: 2px 2px 0 #e73e48;
+}
+.headroom--pinned {
+  display: block;
+}
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+#header {
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  background: #1b4e93;
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {

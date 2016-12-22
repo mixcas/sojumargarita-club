@@ -11,8 +11,9 @@ Site = {
     });
 
     $(document).ready(function () {
-
+      $('#header').headroom();
     });
+
 
   },
 

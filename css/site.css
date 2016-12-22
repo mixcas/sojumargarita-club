@@ -1199,7 +1199,6 @@ h3,
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
   background: #1b4e93;
-  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {

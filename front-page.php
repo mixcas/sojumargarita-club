@@ -23,11 +23,18 @@ if( $shows->have_posts() ) {
     <div class="container">
       <div class="grid-row">
         <article <?php post_class('grid-item item-s-6'); ?> id="post-<?php the_ID(); ?>">
-          <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
-          <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+          <span class="u-pointer"><?php the_post_thumbnail(); ?></span>
         </article>
         <article <?php post_class('grid-item item-s-6'); ?> id="post-<?php the_ID(); ?>">
-          <?php the_content(); ?>
+          <h2><?php the_title(); ?></h2>
+<?php
+      the_content();
+      $tracklist = get_post_meta($post->ID, '_igv_tracklist');
+
+      if ($tracklist) {
+          echo apply_filters('the_content', $tracklist[0]);
+      }
+?>
         </article>
       </div>
     </div>

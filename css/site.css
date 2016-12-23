@@ -1187,6 +1187,9 @@ h3,
 }
 button {
   font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
   padding: 9px 18px;
   margin: 9px 0;
   border: none;

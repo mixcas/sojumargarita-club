@@ -23,6 +23,7 @@ if( $shows->have_posts() ) {
         </div>
         <div <?php post_class('grid-item item-m-12 item-l-6'); ?> id="post-<?php the_ID(); ?>">
           <h2 class="margin-bottom-tiny"><?php the_title(); ?></h2>
+          <div class="content-container margin-bottom-tiny">
 <?php
       the_content();
       $tracklist = get_post_meta($post->ID, '_igv_tracklist');
@@ -32,6 +33,7 @@ if( $shows->have_posts() ) {
       }
 
 ?>
+            </div>
             <button class="play-playlist yellow-button u-pointer">Play</button>
           </div>
         </div>

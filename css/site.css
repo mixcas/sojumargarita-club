@@ -1206,6 +1206,23 @@ h3,
 #playlist-container {
   display: none;
 }
+.pinned-player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 560px;
+  height: 315px;
+  padding: 0;
+}
+.pinned-player iframe {
+  width: 560px;
+  height: 315px;
+  position: initial;
+}
+.blog-archive {
+  background: #fff;
+  color: #1b4e93;
+}
 @media screen and (min-width: 720px) {
   .margin-top-micro {
     margin-top: 7px;
@@ -1474,7 +1491,7 @@ h3,
     width: 1000px;
   }
   .grid-item {
-    padding: 0 12px;
+    padding: 0 20px;
   }
   .grid-row .offset-l-0 {
     margin-left: 0%;
@@ -1657,76 +1674,76 @@ h3,
     max-height: 100%;
   }
   .margin-top-micro {
-    margin-top: 8px;
+    margin-top: 13.333333333333334px;
   }
   .margin-bottom-micro {
-    margin-bottom: 8px;
+    margin-bottom: 13.333333333333334px;
   }
   .padding-top-micro {
-    padding-top: 8px;
+    padding-top: 13.333333333333334px;
   }
   .padding-bottom-micro {
-    padding-bottom: 8px;
+    padding-bottom: 13.333333333333334px;
   }
   .margin-top-tiny {
-    margin-top: 12px;
+    margin-top: 20px;
   }
   .margin-bottom-tiny {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
   .padding-top-tiny {
-    padding-top: 12px;
+    padding-top: 20px;
   }
   .padding-bottom-tiny {
-    padding-bottom: 12px;
+    padding-bottom: 20px;
   }
   .margin-top-small {
-    margin-top: 24px;
+    margin-top: 40px;
   }
   .margin-bottom-small {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
   .padding-top-small {
-    padding-top: 24px;
+    padding-top: 40px;
   }
   .padding-bottom-small {
-    padding-bottom: 24px;
+    padding-bottom: 40px;
   }
   .margin-top-basic {
-    margin-top: 48px;
+    margin-top: 80px;
   }
   .margin-bottom-basic {
-    margin-bottom: 48px;
+    margin-bottom: 80px;
   }
   .padding-top-basic {
-    padding-top: 48px;
+    padding-top: 80px;
   }
   .padding-bottom-basic {
-    padding-bottom: 48px;
+    padding-bottom: 80px;
   }
   .margin-top-mid {
-    margin-top: 84px;
+    margin-top: 140px;
   }
   .margin-bottom-mid {
-    margin-bottom: 84px;
+    margin-bottom: 140px;
   }
   .padding-top-mid {
-    padding-top: 84px;
+    padding-top: 140px;
   }
   .padding-bottom-mid {
-    padding-bottom: 84px;
+    padding-bottom: 140px;
   }
   .margin-top-large {
-    margin-top: 120px;
+    margin-top: 200px;
   }
   .margin-bottom-large {
-    margin-bottom: 120px;
+    margin-bottom: 200px;
   }
   .padding-top-large {
-    padding-top: 120px;
+    padding-top: 200px;
   }
   .padding-bottom-large {
-    padding-bottom: 120px;
+    padding-bottom: 200px;
   }
   .desktop-only {
     display: initial !important;

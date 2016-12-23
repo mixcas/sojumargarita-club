@@ -1185,6 +1185,16 @@ h3,
 .yellow-shadow {
   text-shadow: 2px 2px 0 #e73e48;
 }
+button {
+  font-size: 28px;
+  padding: 9px 18px;
+  margin: 9px 0;
+  border: none;
+}
+.yellow-button {
+  background: #e8e540;
+  color: #1b4e93;
+}
 .headroom--pinned {
   display: block;
 }

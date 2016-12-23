@@ -30,7 +30,9 @@ if( $shows->have_posts() ) {
       if ($tracklist) {
           echo apply_filters('the_content', $tracklist[0]);
       }
+
 ?>
+            <button class="play-playlist yellow-button u-pointer">Play</button>
           </div>
         </div>
 <?php

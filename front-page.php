@@ -19,7 +19,7 @@ if( have_posts() ) {
     the_post();
 ?>
 
-        <article <?php post_class('grid-item item-s-6 offset-m-3'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-item item-s-6 offset-m-3 item-s-12'); ?> id="post-<?php the_ID(); ?>">
 
           <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-tiny"><?php the_title(); ?></h2></a>
 

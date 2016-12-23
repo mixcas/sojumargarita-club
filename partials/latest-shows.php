@@ -18,10 +18,10 @@ if( $shows->have_posts() ) {
 ?>
     <article id="last-show" class="margin-bottom-small">
       <div id="cover-container" class="grid-row">
-        <div <?php post_class('grid-item item-s-12 item-m-6'); ?> id="post-<?php the_ID(); ?>">
+        <div <?php post_class('grid-item item-m-12 item-l-6'); ?> id="post-<?php the_ID(); ?>">
           <span class="u-pointer play-playlist"><?php the_post_thumbnail(); ?></span>
         </div>
-        <div <?php post_class('grid-item item-s-12 item-m-6'); ?> id="post-<?php the_ID(); ?>">
+        <div <?php post_class('grid-item item-m-12 item-l-6'); ?> id="post-<?php the_ID(); ?>">
           <h2 class="margin-bottom-tiny"><?php the_title(); ?></h2>
 <?php
       the_content();

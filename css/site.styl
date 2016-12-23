@@ -47,7 +47,8 @@ $color-yellow = rgb(232, 229, 64)
 // BASIC
 
 html
-  color: $color-black
+  color: $color-white
+  background: $color-blue
   font-family: 'Graphik'
 
 img
@@ -68,6 +69,8 @@ h1, h2, h3, h4, h5, h6
 h1, h2
   letter-spacing: 1px
 
+h2
+  color: $color-red
 // ******************************************************
 
 // MEDIA QUERIES
@@ -110,7 +113,23 @@ font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
   top: 0
   z-index: 1000
   transition: transform 300ms
-  background: $color-blue
+
+#playlist-container
+  display: none
+
+.pinned-player
+  position: fixed
+  bottom: 0
+  right: 0
+  width: 560px
+  height: 315px
+  padding: 0
+
+  iframe
+    width: 560px
+    height: 315px
+    position: initial
+}
 
 @import 'responsive/mobile'
 

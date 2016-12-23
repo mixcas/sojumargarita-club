@@ -12,6 +12,8 @@ Site = {
 
     $(document).ready(function () {
       $('#header').headroom();
+
+      _this.lastShow.init();
     });
 
 
@@ -28,6 +30,29 @@ Site = {
       var string = $(this).html();
       string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
       $(this).html(string);
+    });
+  },
+};
+
+Site.lastShow = {
+  init: function() {
+    var _this = this;
+
+    _this.$playlistContainer =  $('#playlist-container');
+    _this.$coverContainer =  $('#cover-container');
+    _this.$playlistEmbed =  $('#playlist-embed');
+
+    _this.bind();
+  },
+
+  bind: function() {
+    var _this = this;
+
+    $('.play-playlist').on('click', function(e) {
+      _this.$playlistEmbed[0].src +='&autoplay=1';
+      _this.$coverContainer.slideToggle(300);
+      _this.$playlistContainer.slideToggle(300, function() {
+      });
     });
   },
 };

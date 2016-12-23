@@ -879,7 +879,8 @@ p a {
   text-decoration: underline;
 }
 html {
-  color: #000;
+  color: #fff;
+  background: #1b4e93;
   font-family: 'Graphik';
 }
 img {
@@ -904,6 +905,9 @@ h6 {
 h1,
 h2 {
   letter-spacing: 1px;
+}
+h2 {
+  color: #e73e48;
 }
 .container {
   width: 96%;
@@ -1198,7 +1202,9 @@ h3,
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
-  background: #1b4e93;
+}
+#playlist-container {
+  display: none;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {

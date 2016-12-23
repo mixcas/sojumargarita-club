@@ -25,12 +25,12 @@
 <body <?php body_class(); ?>>
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-<section id="main-container" class="padding-top-mid padding-bottom-large margin-top-tiny">
+<section id="main-container" class="padding-top-mid padding-bottom-large margin-top-tiny ">
 
   <header id="header" class="padding-left-basic padding-right-basic yellow-shadow">
     <div class="container">
       <div class="grid-row">
-        <h1 class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
       </div>
     </div>
   </header>

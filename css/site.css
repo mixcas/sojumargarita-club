@@ -880,7 +880,7 @@ p a {
 }
 html {
   color: #fff;
-  background: #1b4e93;
+  background: #164898;
   font-family: 'Graphik';
 }
 img {
@@ -907,7 +907,7 @@ h2 {
   letter-spacing: 1px;
 }
 h2 {
-  color: #e73e48;
+  color: #ef3f42;
 }
 .container {
   width: 96%;
@@ -1183,7 +1183,7 @@ h3,
   font-size: 28px;
 }
 .yellow-shadow {
-  text-shadow: 2px 2px 0 #e73e48;
+  text-shadow: 2px 2px 0 #ef3f42;
 }
 button {
   font-size: 28px;
@@ -1195,8 +1195,8 @@ button {
   border: none;
 }
 .yellow-button {
-  background: #e8e540;
-  color: #1b4e93;
+  background: #e5dc1a;
+  color: #164898;
 }
 .headroom--pinned {
   display: block;
@@ -1234,7 +1234,7 @@ button {
 }
 .blog-archive {
   background: #fff;
-  color: #1b4e93;
+  color: #164898;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {

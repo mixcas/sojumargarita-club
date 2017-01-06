@@ -129,6 +129,16 @@ button
   z-index: 1000
   transition: transform 300ms
 
+.logo
+  fill: white
+  position: relative
+
+  .logo-shadow,
+  .logo-hangul
+    width: 100%
+    position: absolute
+    top: -2px
+
 #playlist-container
   display: none
 
@@ -177,7 +187,7 @@ button
 
 @media screen and (min-width: 1024px)
 
-  $gutter = 40px
+  $gutter = 36px
 
   $margin-micro = ($gutter / 3)
   $margin-tiny = ($gutter / 2)

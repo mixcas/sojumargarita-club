@@ -11,11 +11,10 @@ Site = {
     });
 
     $(document).ready(function () {
-      $('#header').headroom();
-
-      _this.lastShow.init();
     });
 
+    _this.header.init();
+    _this.lastShow.init();
 
   },
 
@@ -34,19 +33,38 @@ Site = {
   },
 };
 
+Site.header = {
+  init: function() {
+    var _this = this;
+
+    $(document).ready(function () {
+      _this.bind();
+    });
+
+  },
+
+  bind: function() {
+    var _this = this;
+
+    $('#header').headroom();
+  },
+};
+
 Site.lastShow = {
   init: function() {
+    var _this = this;
+
+    $(document).ready(function () {
+      _this.bind();
+    });
+  },
+
+  bind: function() {
     var _this = this;
 
     _this.$playlistContainer =  $('#playlist-container');
     _this.$coverContainer =  $('#cover-container');
     _this.$playlistEmbed =  $('#playlist-embed');
-
-    _this.bind();
-  },
-
-  bind: function() {
-    var _this = this;
 
     $('.play-playlist').on('click', function(e) {
       _this.$playlistEmbed[0].src +='&autoplay=1';

@@ -6,10 +6,10 @@
   <title><?php wp_title('|',true,'right'); bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <?php
-    get_template_part('partials/globie');
-    get_template_part('partials/seo');
-  ?>
+<?php
+get_template_part('partials/globie');
+get_template_part('partials/seo');
+?>
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.png">
@@ -25,12 +25,23 @@
 <body <?php body_class(); ?>>
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-<section id="main-container" class="padding-top-mid padding-bottom-large">
+  <section id="main-container" class="padding-top-mid padding-bottom-large">
 
-  <header id="header" class="padding-left-basic padding-right-basic yellow-shadow">
-    <div class="container">
-      <div class="grid-row">
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+    <header id="header" class="padding-top-tiny padding-right-basic yellow-shadow">
+      <div class="container">
+        <div class="grid-row">
+
+          <div class="grid-item item-m-3">
+            <h1 class="u-visuallyhidden"><?php bloginfo('name'); ?></h1>
+            <div class="logo">
+              <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?>
+              <div class="logo-shadow"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?> </div>
+              <div class="logo-hangul"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_hangul.svg'); ?> </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-m-12">
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>

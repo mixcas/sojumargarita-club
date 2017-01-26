@@ -100,7 +100,8 @@ font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
 .yellow-shadow
   text-shadow: 2px 2px 0 $color-red
 
-button
+button,
+.button
   font-size: $font-size-h3
   font-weight: 900
   font-style: italic
@@ -111,7 +112,10 @@ button
 
 .yellow-button
   background: $color-yellow
-  color: $color-blue
+  color: $color-blue !important
+
+.helvetica
+  font-family: 'Helvetica'
 
 // HEADROOM
 .headroom--pinned
@@ -139,8 +143,21 @@ button
     position: absolute
     top: -2px
 
+#last-show
+  transition: background 500ms
+
+  &.black-bg
+    background: black
+
+#cover-container
+  background-position: center
+  background-size: cover
+
 #playlist-container
   display: none
+
+#playlist-embed
+  max-height: 90vh
 
 .pinned-player
   position: fixed
@@ -158,6 +175,12 @@ button
 .blog-archive
   background: rgb(255,255,255)
   color: $color-blue
+
+#play-button,
+#play-link
+  position: absolute
+  bottom: 5px
+  right: 0
 
 @import 'responsive/mobile'
 

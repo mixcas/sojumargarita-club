@@ -1,5 +1,4 @@
-<section id="latest-shows" class="padding-top-tiny padding-bottom-basic">
-  <div class="container">
+<section id="latest-shows" class="padding-bottom-basic">
 <?php
 
 $shows = new WP_Query( array(
@@ -15,30 +14,38 @@ if( $shows->have_posts() ) {
     $index++;
 
     if ($index == 0) {
+      $playlist_id = get_post_meta($post->ID, '_igv_playlist_id', true);
+      $playlist_link = get_post_meta($post->ID, '_igv_playlist_link', true);
 ?>
     <article id="last-show" class="margin-bottom-small">
-      <div id="cover-container" class="grid-row">
-        <div <?php post_class('grid-item item-m-12 item-l-6'); ?> id="post-<?php the_ID(); ?>">
-          <span class="u-pointer play-playlist"><?php the_post_thumbnail(); ?></span>
-        </div>
-        <div <?php post_class('grid-item item-m-12 item-l-6'); ?> id="post-<?php the_ID(); ?>">
-          <h2 class="margin-bottom-tiny"><?php the_title(); ?></h2>
-          <div class="content-container margin-bottom-tiny">
+      <div id="cover-container" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+        <div class="container">
+        <div class="grid-row justify-center">
+          <div class="grid-item item-s-8 margin-top-mid margin-bottom-mid">
+            <div class="logo">
+                <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?>
+              <div class="logo-shadow"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?> </div>
+              <div class="logo-hangul"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_hangul.svg'); ?> </div>
+            </div>
 <?php
-      the_content();
-      $tracklist = get_post_meta($post->ID, '_igv_tracklist');
 
-      if ($tracklist) {
-          echo apply_filters('the_content', $tracklist[0]);
+      if ($playlist_id) {
+?>
+             <button id="play-button" class="play-playlist yellow-button u-pointer medium-only">Play</button>
+<?php
       }
-
+      if ($playlist_link) {
+?>
+             <a id="play-link" class="button yellow-button helvetica mobile-only" href="<?php echo $playlist_link; ?>">Play</a>
+<?php
+      }
 ?>
             </div>
-            <button class="play-playlist yellow-button u-pointer">Play</button>
           </div>
         </div>
+        </div>
+      </div>
 <?php
-      $playlist_id = get_post_meta($post->ID, '_igv_playlist_id', true);
 
       if ($playlist_id) {
 ?>
@@ -53,16 +60,18 @@ if( $shows->have_posts() ) {
       }
 ?>
     </article>
+
 <?php
     } else {
 
       if ($index == 1) {
 ?>
-    <div class="grid-row">
+  <div class="container">
+    <div class="grid-row justify-center">
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-4 item-s-12'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-4 item-s-10'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('l-4'); ?></a>
       </article>
 <?php

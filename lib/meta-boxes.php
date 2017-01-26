@@ -60,7 +60,13 @@ function igv_cmb_metaboxes() {
     'id'   => $prefix . 'playlist_id',
     'type' => 'text',
   ));
-  
+
+  $show_meta->add_field( array(
+    'name' => __( 'Youtube playlist link', 'cmb2' ),
+    'id'   => $prefix . 'playlist_link',
+    'type' => 'text',
+  ));
+
   $show_meta->add_field( array(
     'name' => __( 'Tracklist', 'cmb2' ),
     'id'   => $prefix . 'tracklist',

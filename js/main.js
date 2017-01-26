@@ -62,13 +62,16 @@ Site.lastShow = {
   bind: function() {
     var _this = this;
 
+    _this.$lastShowContainer =  $('#last-show');
     _this.$playlistContainer =  $('#playlist-container');
     _this.$coverContainer =  $('#cover-container');
     _this.$playlistEmbed =  $('#playlist-embed');
 
     $('.play-playlist').on('click', function(e) {
       _this.$playlistEmbed[0].src +='&autoplay=1';
-      _this.$coverContainer.slideToggle(300);
+      _this.$coverContainer.slideToggle(300, function() {
+        _this.$lastShowContainer.addClass('black-bg');
+      });
       _this.$playlistContainer.slideToggle(300, function() {
       });
     });

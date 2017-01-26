@@ -72,7 +72,14 @@ if( $shows->have_posts() ) {
       }
 ?>
       <article <?php post_class('grid-item item-m-4 item-s-10'); ?> id="post-<?php the_ID(); ?>">
-        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('l-4'); ?></a>
+        <a href="<?php the_permalink() ?>">
+<?php
+      $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );
+      if ($cover) {
+        echo wp_get_attachment_image($cover, 'l-4');
+      }
+?>
+        </a>
       </article>
 <?php
       if ($index == 3) {

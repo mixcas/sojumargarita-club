@@ -92,11 +92,8 @@ function igv_cmb_metaboxes() {
     'id'   => $prefix . 'episode_number',
     'type' => 'text',
     'attributes' => array(
-      'type' => 'number',
       'pattern' => '\d*',
     ),
-    'sanitization_cb' => 'absint',
-    'escape_cb'       => 'absint',
   ));
 
 }

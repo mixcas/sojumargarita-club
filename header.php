@@ -27,7 +27,7 @@ get_template_part('partials/seo');
 
   <section id="main-container" class="padding-bottom-large">
 
-    <header id="header" class="padding-top-tiny padding-right-basic yellow-shadow">
+    <header id="header" class="padding-top-small padding-bottom-small yellow-shadow">
       <div class="container">
         <div class="grid-row">
 
@@ -38,14 +38,15 @@ get_template_part('partials/seo');
             </div>
           </div>
 
-          <div class="grid-item item-m-2">
-            <a href="/blog">Blog</a></li>
+          <div class="grid-item item-m-6">
+            <a href="<?php echo home_url('/blog'); ?>">Blog</a></li>
+            <a href="<?php echo home_url('/episodios'); ?>">Episodios</a>
           </div>
-          <div class="grid-item item-m-2">
-            <a href="/blog">Episodios</a>
-          </div>
+
           <div class="grid-item item-m-3">
-             TW FB YO
+            <a class="social-icon" href="https://www.youtube.com/channel/UCXxiO5-SXm-1or2dcB-4qXQ" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/youtube_logo.svg'); ?></a>
+            <a class="social-icon" href="http://facebook.com/sojumargaritaclub/" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/fb_logo.svg'); ?></a>
+            <a class="social-icon" href="https://open.spotify.com/user/sojumargaritaclub/playlist/2yPxW7XUH6jhNXgqYZQWKY" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/spotify_logo.svg'); ?></a>
           </div>
         </div>
       </div>

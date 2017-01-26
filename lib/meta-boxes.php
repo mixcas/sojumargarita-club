@@ -56,6 +56,20 @@ function igv_cmb_metaboxes() {
   ) );
 
   $show_meta->add_field( array(
+    'name'    => 'Cover photo',
+    'desc'    => 'Upload an image or enter an URL.',
+    'id'   => $prefix . 'cover_photo',
+    'type'    => 'file',
+    // Optional:
+    'options' => array(
+      'url' => false, // Hide the text input for the url
+    ),
+    'text'    => array(
+      'add_upload_file_text' => 'Add Cover Photo' // Change upload button text. Default: "Add or Upload File"
+    ),
+  ) );
+
+  $show_meta->add_field( array(
     'name' => __( 'Youtube playlist ID', 'cmb2' ),
     'id'   => $prefix . 'playlist_id',
     'type' => 'text',
@@ -84,21 +98,6 @@ function igv_cmb_metaboxes() {
     'sanitization_cb' => 'absint',
     'escape_cb'       => 'absint',
   ));
-
-
-  $show_meta->add_field( array(
-    'name'    => 'Cover photo',
-    'desc'    => 'Upload an image or enter an URL.',
-    'id'   => $prefix . 'cover_photo',
-    'type'    => 'file',
-    // Optional:
-    'options' => array(
-      'url' => false, // Hide the text input for the url
-    ),
-    'text'    => array(
-      'add_upload_file_text' => 'Add Cover Photo' // Change upload button text. Default: "Add or Upload File"
-    ),
-  ) );
 
 }
 ?>

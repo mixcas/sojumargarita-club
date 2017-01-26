@@ -27,20 +27,25 @@ get_template_part('partials/seo');
 
   <section id="main-container" class="padding-bottom-large">
 
-    <header id="header" class="u-visuallyhidden padding-top-tiny padding-right-basic yellow-shadow">
+    <header id="header" class="padding-top-tiny padding-right-basic yellow-shadow">
       <div class="container">
         <div class="grid-row">
 
           <div class="grid-item item-m-3">
             <h1 class="u-visuallyhidden"><?php bloginfo('name'); ?></h1>
             <div class="logo">
-              <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?>
-              <div class="logo-shadow"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_abc.svg'); ?> </div>
-              <div class="logo-hangul"> <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_hangul.svg'); ?> </div>
+              <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_horizontal.svg'); ?></a>
             </div>
           </div>
 
-          <div class="grid-item item-m-12">
+          <div class="grid-item item-m-2">
+            <a href="/blog">Blog</a></li>
+          </div>
+          <div class="grid-item item-m-2">
+            <a href="/blog">Episodios</a>
+          </div>
+          <div class="grid-item item-m-3">
+             TW FB YO
           </div>
         </div>
       </div>

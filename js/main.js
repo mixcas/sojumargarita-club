@@ -46,7 +46,6 @@ Site.header = {
   bind: function() {
     var _this = this;
 
-    $('#header').headroom();
   },
 };
 

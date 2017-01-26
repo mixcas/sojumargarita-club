@@ -117,21 +117,10 @@ button,
 .helvetica
   font-family: 'Helvetica'
 
-// HEADROOM
-.headroom--pinned
-  display: block
-
-.headroom--unpinned
-  transform: translateY(-100%)
-
 // HEADER
 #header
   color: $color-white
   width: 100%
-  position: fixed
-  top: 0
-  z-index: 1000
-  transition: transform 300ms
 
 .logo
   fill: white
@@ -155,9 +144,10 @@ button,
 
 #playlist-container
   display: none
+  max-height: 100vh
 
 #playlist-embed
-  max-height: 90vh
+  max-height: 100vh
 
 .pinned-player
   position: fixed

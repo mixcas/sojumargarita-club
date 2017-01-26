@@ -1202,23 +1202,9 @@ button,
 .helvetica {
   font-family: 'Helvetica';
 }
-.headroom--pinned {
-  display: block;
-}
-.headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
 #header {
   color: #fff;
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
 }
 .logo {
   fill: #fff;
@@ -1242,9 +1228,10 @@ button,
 }
 #playlist-container {
   display: none;
+  max-height: 100vh;
 }
 #playlist-embed {
-  max-height: 90vh;
+  max-height: 100vh;
 }
 .pinned-player {
   position: fixed;
@@ -1268,6 +1255,9 @@ button,
   position: absolute;
   bottom: 5px;
   right: 0;
+}
+.home #header {
+  display: none;
 }
 #cover-container .grid-row {
   max-height: 100vh;

@@ -13,11 +13,16 @@ if( have_posts() ) {
     the_post();
 ?>
 
-        <article <?php post_class('grid-item item-s-12 item-m-10 content-copy'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-row justify-center margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
+          <div class="grid-item item-s-6 text-align-center">
+            <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-small font-size-h1"><?php the_title(); ?></h2></a>
+          </div>
 
-          <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
+          <div class="grid-item item-s-8 content-copy">
+            <?php the_post_thumbnail() ?>
 
-          <?php the_content(); ?>
+            <?php the_content(); ?>
+          </div>
 
         </article>
 

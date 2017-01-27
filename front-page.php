@@ -24,11 +24,11 @@ if( have_posts() ) {
 ?>
 
         <article <?php post_class('grid-row justify-center margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
-          <div class="grid-item item-s-8 text-align-center">
+          <div class="grid-item item-s-6 text-align-center">
             <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-small font-size-h1"><?php the_title(); ?></h2></a>
           </div>
 
-          <div class="grid-item item-s-10 content-copy">
+          <div class="grid-item item-s-8 content-copy">
             <?php the_post_thumbnail() ?>
 
             <?php the_content(); ?>
@@ -41,7 +41,7 @@ if( have_posts() ) {
 ?>
     </div>
     <div class="grid-row justify-center">
-      <div class="grid-item item-s-10 text-align-center">
+      <div class="grid-item item-s-8 text-align-center">
       <a class="font-bold font-italic" href="<?php echo home_url('/noticias/page/2'); ?>">Más Noticias</a>
       </div>
     </div>

@@ -71,7 +71,7 @@ if( $shows->have_posts() ) {
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-4 item-s-10'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-4 item-s-8'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

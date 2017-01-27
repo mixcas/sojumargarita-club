@@ -7,8 +7,8 @@ get_header();
   <?php get_template_part('partials/latest-shows'); ?>
 
 
-  <section class="blog-archive padding-top-basic padding-bottom-basic">
-    <h2 class="text-align-center margin-bottom-tiny font-size-h1">Blog</h2>
+  <section class="noticias-archive padding-top-basic padding-bottom-basic">
+    <h2 class="text-align-center margin-bottom-tiny font-size-h1">Noticias</h2>
 
     <div class="container">
       <div class="grid-row">

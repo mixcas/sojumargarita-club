@@ -5,7 +5,6 @@ get_header();
 <main id="main-content">
   <section id="posts">
     <div class="container">
-      <div class="grid-row justify-center">
 
 <?php
 if( have_posts() ) {
@@ -22,7 +21,7 @@ if( have_posts() ) {
 <?php
       if ($playlist_id) {
 ?>
-          <div class="grid-item item-s-12">
+          <div class="grid-item item-s-10">
             <div class="u-video-embed-container margin-bottom-small">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=<?php echo $playlist_id; ?>" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -45,7 +44,6 @@ if( have_posts() ) {
 <?php
 } ?>
 
-      </div>
       <div class="grid-row justify-center">
         <div class="grid-item item-s-6">
           <?php get_template_part('partials/pagination'); ?>

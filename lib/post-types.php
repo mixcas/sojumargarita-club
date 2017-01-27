@@ -3,13 +3,13 @@
 // https://developer.wordpress.org/resource/dashicons/
 function add_menu_icons_styles(){
 ?>
- 
+
 <style>
 #menu-posts-show .dashicons-admin-post:before {
     content: '\f126';
 }
 </style>
- 
+
 <?php
 }
 add_action( 'admin_head', 'add_menu_icons_styles' );
@@ -20,7 +20,7 @@ add_action( 'init', 'register_cpt_show' );
 
 function register_cpt_show() {
 
-    $labels = array( 
+    $labels = array(
         'name' => _x( 'Shows', 'show' ),
         'singular_name' => _x( 'Show', 'show' ),
         'add_new' => _x( 'Add New', 'show' ),
@@ -35,17 +35,17 @@ function register_cpt_show() {
         'menu_name' => _x( 'Shows', 'show' ),
     );
 
-    $args = array( 
+    $args = array(
         'labels' => $labels,
         'hierarchical' => false,
-        
+
         'supports' => array( 'title', 'editor', 'thumbnail' ),
-        
+
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
-        
+
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,

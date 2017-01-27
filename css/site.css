@@ -1234,6 +1234,9 @@ h3,
   width: 100%;
   display: block;
 }
+.content-copy a {
+  text-decoration: underline;
+}
 button,
 .button {
   font-size: 28px;
@@ -1614,6 +1617,7 @@ button,
     margin: 10.5px 0;
   }
   .content-copy > * {
+    max-width: 100%;
     margin: 21px auto;
   }
 }
@@ -1923,7 +1927,7 @@ button,
   }
   .content-copy > * {
     margin: 0 auto 36px;
-    max-width: 50%;
+    max-width: 75%;
     width: 100%;
   }
   .content-copy img {

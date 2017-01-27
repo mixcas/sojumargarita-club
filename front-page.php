@@ -7,6 +7,9 @@ get_header();
   <?php get_template_part('partials/latest-shows'); ?>
 
 
+<?php
+if( have_posts() ) {
+?>
   <section class="noticias-archive padding-top-basic padding-bottom-basic">
     <h2 class="text-align-center margin-bottom-tiny font-size-h1">Noticias</h2>
 
@@ -14,7 +17,6 @@ get_header();
       <div class="grid-row">
 
 <?php
-if( have_posts() ) {
   while( have_posts() ) {
     the_post();
 ?>
@@ -29,17 +31,16 @@ if( have_posts() ) {
 
 <?php
   }
-} else {
 ?>
-        <article class="u-alert grid-item item-s-12"><?php _e('Sorry, no posts matched your criteria :{'); ?></article>
-<?php
-} ?>
-
       </div>
     </div>
   </section>
 
   <?php get_template_part('partials/pagination'); ?>
+<?php
+}
+?>
+
 </main>
 
 <?php

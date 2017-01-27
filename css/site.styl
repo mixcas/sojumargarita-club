@@ -55,12 +55,6 @@ img
   max-width: 100%
   height: auto
 
-.mobile-only
-  display: initial !important
-
-.desktop-only
-  display: none !important
-
 // HEADERS
 h1, h2, h3, h4, h5, h6
   font-weight: bold
@@ -71,6 +65,23 @@ h1, h2
 
 h2
   color: $color-red
+
+// CUSTOM HELPER CLASSES
+.yellow-button
+  background: $color-yellow
+  color: $color-blue !important
+
+.yellow-shadow
+  text-shadow: 2px 2px 0 $color-red
+
+.helvetica
+  font-family: 'Helvetica'
+
+.mobile-only
+  display: initial !important
+
+.desktop-only
+  display: none !important
 
 
 // ******************************************************
@@ -96,86 +107,6 @@ grid(96%, $gutter, s)
 space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
 font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
-
-.yellow-shadow
-  text-shadow: 2px 2px 0 $color-red
-
-button,
-.button
-  font-size: $font-size-h3
-  font-weight: 900
-  font-style: italic
-  text-transform: uppercase
-  padding: $margin-tiny $margin-small
-  margin: $margin-tiny 0
-  border: none
-
-.yellow-button
-  background: $color-yellow
-  color: $color-blue !important
-
-.helvetica
-  font-family: 'Helvetica'
-
-// HEADER
-#header
-  color: $color-white
-  width: 100%
-
-.logo
-  fill: white
-  position: relative
-
-  .logo-shadow,
-  .logo-hangul
-    width: 100%
-    position: absolute
-    top: -2px
-
-.social-icon
-  svg
-    width: 45px
-    fill: $color-white
-
-#last-show
-  transition: background 500ms
-
-  &.black-bg
-    background: black
-
-#cover-container
-  background-position: center
-  background-size: cover
-
-#playlist-container
-  display: none
-  max-height: 100vh
-
-#playlist-embed
-  max-height: 100vh
-
-.pinned-player
-  position: fixed
-  bottom: 0
-  right: 0
-  width: 560px
-  height: 315px
-  padding: 0
-
-  iframe
-    width: 560px
-    height: 315px
-    position: initial
-
-.blog-archive
-  background: rgb(255,255,255)
-  color: $color-blue
-
-#play-button,
-#play-link
-  position: absolute
-  bottom: 5px
-  right: 0
 
 @import 'responsive/mobile'
 

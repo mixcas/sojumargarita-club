@@ -887,12 +887,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.mobile-only {
-  display: initial !important;
-}
-.desktop-only {
-  display: none !important;
-}
 h1,
 h2,
 h3,
@@ -908,6 +902,22 @@ h2 {
 }
 h2 {
   color: #ef3f42;
+}
+.yellow-button {
+  background: #e5dc1a;
+  color: #164898 !important;
+}
+.yellow-shadow {
+  text-shadow: 2px 2px 0 #ef3f42;
+}
+.helvetica {
+  font-family: 'Helvetica';
+}
+.mobile-only {
+  display: initial !important;
+}
+.desktop-only {
+  display: none !important;
 }
 .container {
   width: 96%;
@@ -1218,8 +1228,11 @@ h3,
 .font-size-h3 {
   font-size: 28px;
 }
-.yellow-shadow {
-  text-shadow: 2px 2px 0 #ef3f42;
+.content-copy > * {
+  margin: 36px auto;
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 button,
 .button {
@@ -1231,16 +1244,12 @@ button,
   margin: 9px 0;
   border: none;
 }
-.yellow-button {
-  background: #e5dc1a;
-  color: #164898 !important;
-}
-.helvetica {
-  font-family: 'Helvetica';
-}
 #header {
   color: #fff;
   width: 100%;
+}
+.home #header {
+  display: none;
 }
 .logo {
   fill: #fff;
@@ -1286,9 +1295,9 @@ button,
   height: 315px;
   position: initial;
 }
-.blog-archive {
-  background: #fff;
-  color: #164898;
+#cover-container .grid-row {
+  max-height: 100vh;
+  height: 133.33333vw;
 }
 #play-button,
 #play-link {
@@ -1296,18 +1305,9 @@ button,
   bottom: 5px;
   right: 0;
 }
-.home #header {
-  display: none;
-}
-#cover-container .grid-row {
-  max-height: 100vh;
-  height: 133.33333vw;
-}
-.content-copy > * {
-  margin: 36px auto;
-  max-width: 100%;
-  width: 100%;
-  display: block;
+.blog-archive {
+  background: #fff;
+  color: #164898;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {
@@ -1606,6 +1606,12 @@ button,
   }
   .mobile-only {
     display: none !important;
+  }
+  button,
+  .button {
+    font-size: 28px;
+    padding: 10.5px 21px;
+    margin: 10.5px 0;
   }
   .content-copy > * {
     margin: 21px auto;
@@ -1908,6 +1914,12 @@ button,
   }
   .desktop-only {
     display: initial !important;
+  }
+  button,
+  .button {
+    font-size: 28px;
+    padding: 18px 36px;
+    margin: 18px 0;
   }
   .content-copy > * {
     margin: 0 auto 36px;

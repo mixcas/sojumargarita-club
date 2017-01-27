@@ -1,11 +1,4 @@
-.home #header
-  display: none
-
-#cover-container
-  .grid-row
-    max-height: 100vh
-    height: 133.33333vw
-
+// DEFAULTS
 .content-copy
   & > *
     margin:  $gutter * 2 auto
@@ -13,3 +6,87 @@
     width: 100%
     display: block
 
+button,
+.button
+  font-size: $font-size-h3
+  font-weight: 900
+  font-style: italic
+  text-transform: uppercase
+  padding: $margin-tiny $margin-small
+  margin: $margin-tiny 0
+  border: none
+
+
+
+// HEADER
+#header
+  color: $color-white
+  width: 100%
+
+.home #header
+  display: none
+
+.logo
+  fill: white
+  position: relative
+
+  .logo-shadow,
+  .logo-hangul
+    width: 100%
+    position: absolute
+    top: -2px
+
+.social-icon
+  svg
+    width: 45px
+    fill: $color-white
+
+// LAST SHOW
+#last-show
+  transition: background 500ms
+
+  &.black-bg
+    background: black
+
+#cover-container
+  background-position: center
+  background-size: cover
+
+#playlist-container
+  display: none
+  max-height: 100vh
+
+#playlist-embed
+  max-height: 100vh
+
+.pinned-player
+  position: fixed
+  bottom: 0
+  right: 0
+  width: 560px
+  height: 315px
+  padding: 0
+
+  iframe
+    width: 560px
+    height: 315px
+    position: initial
+
+#cover-container
+  .grid-row
+    max-height: 100vh
+    height: 133.33333vw
+
+#play-button,
+#play-link
+  position: absolute
+  bottom: 5px
+  right: 0
+
+// BLOG
+.blog-archive
+  background: rgb(255,255,255)
+  color: $color-blue
+
+
+// CONTENT COPY

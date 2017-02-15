@@ -20,7 +20,6 @@ get_template_part('partials/seo');
   <?php if (is_singular() && pings_open(get_queried_object())) { ?>
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <?php } ?>
-  <?php get_template_part('partials/scripts'); ?>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

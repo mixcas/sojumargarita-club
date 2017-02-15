@@ -41,7 +41,7 @@ get_template_part('partials/seo');
 
           <div class="grid-item item-m-6">
             <a href="<?php echo home_url('/noticias'); ?>">Noticias</a></li>
-            <a href="<?php echo home_url('/episodios'); ?>">Episodios</a>
+            <a href="<?php echo home_url('/show'); ?>">Episodios</a>
           </div>
 
           <div class="grid-item item-m-3">

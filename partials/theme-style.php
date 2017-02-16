@@ -16,7 +16,7 @@ $theme_color_fourth = IGV_get_option( '_igv_site_options', '_igv_theme_color_fou
   background: <?php echo $theme_color_second; ?>;
 }
 
-.background-third-color, button {
+.background-third-color, .button, a.button {
   background: <?php echo $theme_color_third; ?>;
 }
 
@@ -24,7 +24,7 @@ $theme_color_fourth = IGV_get_option( '_igv_site_options', '_igv_theme_color_fou
   background: <?php echo $theme_color_fourth; ?>;
 }
 
-.text-main-color, button {
+.text-main-color, .button, a.button {
   color: <?php echo $theme_color_main; ?>;
 }
 

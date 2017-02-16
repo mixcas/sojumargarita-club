@@ -904,7 +904,8 @@ h2 {
 .mobile-only {
   display: initial !important;
 }
-.desktop-only {
+.desktop-only,
+.medium-only {
   display: none !important;
 }
 .container {
@@ -1590,6 +1591,9 @@ button,
   }
   .mobile-only {
     display: none !important;
+  }
+  .medium-only {
+    display: initial !important;
   }
   button,
   .button {

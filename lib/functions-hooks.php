@@ -4,7 +4,7 @@
 
 
 function sort_show_archive_by_ep_num( $query ) {
-  if ( $query->is_post_type_archive('show') && $query->is_main_query() ) {
+  if ( $query->is_post_type_archive('show') && $query->is_main_query() && !is_admin() ) {
     $query->set('orderby','meta_value_num');
     $query->set('meta_key','_igv_episode_number');
   }

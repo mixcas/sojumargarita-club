@@ -879,8 +879,6 @@ p a {
   text-decoration: underline;
 }
 html {
-  color: #fff;
-  background: #164898;
   font-family: 'Graphik';
 }
 img {
@@ -899,16 +897,6 @@ h6 {
 h1,
 h2 {
   letter-spacing: 1px;
-}
-h2 {
-  color: #ef3f42;
-}
-.yellow-button {
-  background: #e5dc1a;
-  color: #164898 !important;
-}
-.yellow-shadow {
-  text-shadow: 2px 2px 0 #ef3f42;
 }
 .helvetica {
   font-family: 'Helvetica';
@@ -1248,14 +1236,12 @@ button,
   border: none;
 }
 #header {
-  color: #fff;
   width: 100%;
 }
 .home #header {
   display: none;
 }
 .logo {
-  fill: #fff;
   position: relative;
 }
 .logo .logo-shadow,
@@ -1266,7 +1252,6 @@ button,
 }
 .social-icon svg {
   width: 45px;
-  fill: #fff;
 }
 #last-show {
   transition: background 500ms;
@@ -1307,10 +1292,6 @@ button,
   position: absolute;
   bottom: 5px;
   right: 0;
-}
-.noticias-archive {
-  background: #fff;
-  color: #164898;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {

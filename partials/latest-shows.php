@@ -33,7 +33,7 @@ if( $shows->have_posts() ) {
 
       if ($playlist_id) {
 ?>
-             <button id="play-button" class="play-playlist yellow-button u-pointer medium-only">Play</button>
+             <button id="play-button" class="play-playlist button u-pointer medium-only">Play</button>
 <?php
       }
       if ($playlist_link) {

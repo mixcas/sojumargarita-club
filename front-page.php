@@ -10,7 +10,7 @@ get_header();
 <?php
 if( have_posts() ) {
 ?>
-  <section id="noticias" class="noticias-archive padding-top-basic padding-bottom-basic">
+  <section id="noticias" class="noticias-archive padding-top-basic padding-bottom-basic text-main-color background-second-color">
     <div class="container">
 
 <?php
@@ -25,7 +25,7 @@ if( have_posts() ) {
 
         <article <?php post_class('grid-row justify-center margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
           <div class="grid-item item-s-6 text-align-center">
-            <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-small font-size-h1"><?php the_title(); ?></h2></a>
+            <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-small font-size-h1 text-fourth-color"><?php the_title(); ?></h2></a>
           </div>
 
           <div class="grid-item item-s-8 content-copy">

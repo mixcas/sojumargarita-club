@@ -21,6 +21,7 @@ get_template_part('partials/seo');
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <?php } ?>
   <?php debug_page_request(); ?>
+  <?php get_template_part('partials/theme-style'); ?>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -28,7 +29,7 @@ get_template_part('partials/seo');
 
   <section id="main-container" class="padding-bottom-large">
 
-    <header id="header" class="padding-top-small padding-bottom-small yellow-shadow">
+    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color">
       <div class="container">
         <div class="grid-row">
 

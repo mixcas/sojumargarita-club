@@ -94,12 +94,31 @@ $metabox = array(
       'default' => 'Default Text',
     ),
     array(
-      'name'    => __( 'Test Color Picker', 'IGV' ),
-      'desc'    => __( 'field description (optional)', 'IGV' ),
-      'id'      => $prefix . 'test_colorpicker',
+      'name'    => __( 'Main Color', 'IGV' ),
+      'desc' => __( 'Main background, single background', 'IGV' ),
+      'id'      => $prefix . 'theme_color_main',
       'type'    => 'colorpicker',
-      'default' => '#bada55',
-    )
+      'default' => '#164898',
+    ),
+    array(
+      'name'    => __( 'Second Color', 'IGV' ),
+      'id'      => $prefix . 'theme_color_second',
+      'desc' => __( 'Used in te logo', 'IGV' ),
+      'type'    => 'colorpicker',
+      'default' => '#ffffff',
+    ),
+    array(
+      'name'    => __( 'Third Color', 'IGV' ),
+      'id'      => $prefix . 'theme_color_third',
+      'type'    => 'colorpicker',
+      'default' => '#E5DC1A',
+    ),
+    array(
+      'name'    => __( 'Fourth Color', 'IGV' ),
+      'id'      => $prefix . 'theme_color_fourth',
+      'type'    => 'colorpicker',
+      'default' => '#ef3f42',
+    ),
   )
 );
 

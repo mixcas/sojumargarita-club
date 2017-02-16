@@ -1,4 +1,4 @@
-<section id="latest-shows" class="padding-bottom-basic">
+<section id="latest-shows" class="">
 <?php
 
 $shows = new WP_Query( array(
@@ -73,7 +73,7 @@ if( $shows->have_posts() ) {
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-4 item-s-11'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-4 item-s-11 margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

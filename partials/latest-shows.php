@@ -52,7 +52,7 @@ if( $shows->have_posts() ) {
       if ($playlist_id) {
 ?>
       <div id="playlist-container" class"grid-row">
-        <div class="grid-item item-s-12">
+        <div class="grid-item item-s-11">
           <div class="u-video-embed-container">
             <iframe id="playlist-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=<?php echo $playlist_id; ?>" frameborder="0" allowfullscreen></iframe>
           </div>

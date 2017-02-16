@@ -15,7 +15,7 @@ if( have_posts() ) {
 
 <?php
   $latest_posts = new WP_Query( array(
-    'posts_per_page'   => 4,
+    'posts_per_page'   => 5,
     'post_status'      => 'publish',
   ));
 

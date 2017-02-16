@@ -5,6 +5,8 @@ $shows = new WP_Query( array(
   'post_type' => 'show',
   'orderby' => 'meta_value_num',
   'meta_key' => '_igv_episode_number',
+  'posts_per_page'   => 4,
+  'post_status'      => 'publish',
 ));
 
 if( $shows->have_posts() ) {

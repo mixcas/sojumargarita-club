@@ -19,7 +19,7 @@ if( $shows->have_posts() ) {
       $playlist_id = get_post_meta($post->ID, '_igv_playlist_id', true);
       $playlist_link = get_post_meta($post->ID, '_igv_playlist_link', true);
 ?>
-    <article id="last-show" class="margin-bottom-small">
+    <article id="last-show" class="margin-bottom-small play-playlist u-pointer">
       <div id="cover-container" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <div class="container">
         <div class="grid-row justify-center">

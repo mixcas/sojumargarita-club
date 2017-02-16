@@ -8,17 +8,17 @@ get_header();
 
 
 <?php
-if( have_posts() ) {
-?>
-  <section id="noticias" class="noticias-archive padding-top-basic padding-bottom-basic text-main-color background-second-color">
-    <div class="container">
-
-<?php
   $latest_posts = new WP_Query( array(
     'posts_per_page'   => 5,
     'post_status'      => 'publish',
   ));
+if( $latest_posts->have_posts() ) {
+?>
+  <section id="noticias" class="noticias-archive padding-top-basic padding-bottom-basic text-main-color background-second-color">
+    <div class="container">
 
+
+<?php
   while( $latest_posts->have_posts() ) {
     $latest_posts->the_post();
 ?>

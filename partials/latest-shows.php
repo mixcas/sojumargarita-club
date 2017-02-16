@@ -52,7 +52,7 @@ if( $shows->have_posts() ) {
       if ($playlist_id) {
 ?>
       <div id="playlist-container" class"grid-row">
-        <div class="grid-item item-s-11">
+        <div class="grid-item item-s-12">
           <div class="u-video-embed-container">
             <iframe id="playlist-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=<?php echo $playlist_id; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -73,7 +73,7 @@ if( $shows->have_posts() ) {
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-4 item-s-12'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-4 item-s-11'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

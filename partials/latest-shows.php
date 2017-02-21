@@ -5,7 +5,7 @@ $shows = new WP_Query( array(
   'post_type' => 'show',
   'orderby' => 'meta_value_num',
   'meta_key' => '_igv_episode_number',
-  'posts_per_page'   => 4,
+  'posts_per_page'   => 5,
   'post_status'      => 'publish',
 ));
 
@@ -73,7 +73,7 @@ if( $shows->have_posts() ) {
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-4 item-s-11 margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-3 item-s-6 margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

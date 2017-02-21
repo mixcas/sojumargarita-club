@@ -23,12 +23,12 @@ get_template_part('partials/seo');
   <?php debug_page_request(); ?>
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(main_class()); ?>>
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-  <section id="main-container" class="background-second-color">
+<section id="main-container">
 
-    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold background-main-color">
+    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold">
       <div class="container">
         <div class="grid-row">
 

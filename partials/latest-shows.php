@@ -1,4 +1,4 @@
-<section id="latest-shows" class="">
+<section id="latest-shows" class="background-main-color">
 <?php
 
 $shows = new WP_Query( array(

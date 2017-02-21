@@ -26,9 +26,9 @@ get_template_part('partials/seo');
 <body <?php body_class(); ?>>
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-  <section id="main-container">
+  <section id="main-container" class="background-second-color">
 
-    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold">
+    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold background-main-color">
       <div class="container">
         <div class="grid-row">
 

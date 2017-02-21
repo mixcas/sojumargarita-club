@@ -53,7 +53,6 @@ $theme_color_fourth = IGV_get_option( '_igv_site_options', '_igv_theme_color_fou
 
 html {
   text: <?php echo $theme_color_second; ?>;
-  background: <?php echo $theme_color_main; ?>;
 }
 
 </style>

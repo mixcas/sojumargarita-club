@@ -34,7 +34,7 @@
 }
 .u-video-embed-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 42.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -825,7 +825,7 @@ html {
   letter-spacing: 0.001em;
 }
 body {
-  line-height: 1.35;
+  line-height: 1.62;
 }
 p {
   margin-bottom: 1rem;
@@ -837,7 +837,7 @@ p {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 .font-larger {
-  font-size: 1.3rem;
+  font-size: 3rem;
 }
 .font-italic {
   font-style: italic;
@@ -1253,6 +1253,12 @@ button,
 }
 .social-icon svg {
   width: 24px;
+}
+.cover-photo {
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
 }
 #last-show {
   transition: background 500ms;

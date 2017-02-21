@@ -28,7 +28,7 @@ if( $latest_posts->have_posts() ) {
             <a href="<?php the_permalink() ?>"><h2 class="margin-bottom-small font-size-h1 text-fourth-color"><?php the_title(); ?></h2></a>
           </div>
 
-          <div class="grid-item item-s-12 item-m-10 content-copy">
+          <div class="grid-item item-s-12 item-l-9 content-copy">
             <?php the_post_thumbnail() ?>
 
             <?php the_content(); ?>

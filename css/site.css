@@ -880,6 +880,8 @@ p a {
 }
 html {
   font-family: 'Graphik';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 img {
   max-width: 100%;

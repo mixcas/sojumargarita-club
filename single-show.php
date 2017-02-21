@@ -13,9 +13,9 @@ if( have_posts() ) {
     $playlist_id = get_post_meta($post->ID, '_igv_playlist_id', true);
 ?>
 
-        <article <?php post_class('grid-row justify-center margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-row justify-center margin-bottom-basic text-second-color'); ?> id="post-<?php the_ID(); ?>">
           <div class="grid-item item-s-6 text-align-center">
-            <a href="<?php the_permalink() ?>"><h1 class="margin-bottom-small text-second-color"><?php the_title(); ?></h1></a>
+            <a href="<?php the_permalink() ?>"><h1 class="margin-bottom-small"><?php the_title(); ?></h1></a>
           </div>
 
 <?php

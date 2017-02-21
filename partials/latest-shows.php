@@ -84,7 +84,7 @@ if( $shows->have_posts() ) {
         </a>
       </article>
 <?php
-      if ($index == 3) {
+      if ($index == 4) {
 ?>
     </div>
 <?php

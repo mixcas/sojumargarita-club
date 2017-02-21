@@ -1294,6 +1294,14 @@ button,
   bottom: 5px;
   right: 0;
 }
+.content-copy i {
+  font-style: italic;
+}
+.content-copy .wp-caption-text {
+  font-style: italic;
+  font-size: small;
+  text-align: center;
+}
 @media screen and (min-width: 720px) {
   .margin-top-micro {
     margin-top: 7px;

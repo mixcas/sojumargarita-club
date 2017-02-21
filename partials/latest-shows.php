@@ -19,7 +19,7 @@ if( $shows->have_posts() ) {
       $playlist_id = get_post_meta($post->ID, '_igv_playlist_id', true);
       $playlist_link = get_post_meta($post->ID, '_igv_playlist_link', true);
 ?>
-    <article id="last-show" class="margin-bottom-basic play-playlist u-pointer">
+    <article id="last-show" class="margin-bottom-small play-playlist u-pointer">
       <div id="cover-container" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <div class="container">
         <div class="grid-row justify-center">
@@ -69,11 +69,11 @@ if( $shows->have_posts() ) {
       if ($index == 1) {
 ?>
   <div class="container">
-    <div class="grid-row justify-center">
+    <div class="grid-row justify-center margin-bottom-small">
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-3 item-s-6 margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-3 item-s-6'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

@@ -69,11 +69,11 @@ if( $shows->have_posts() ) {
       if ($index == 1) {
 ?>
   <div class="container">
-    <div class="grid-row justify-center margin-bottom-small">
+    <div class="grid-row justify-center">
 <?php
       }
 ?>
-      <article <?php post_class('grid-item item-m-3 item-s-6'); ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class('grid-item item-m-3 item-s-6 margin-bottom-small'); ?> id="post-<?php the_ID(); ?>">
         <a href="<?php the_permalink() ?>">
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );

@@ -18,8 +18,8 @@ if( have_posts() ) {
         </div>
       </div>
 
-      <div class="grid-row justify-center">
-        <div class="grid-item item-s-12 item-m-10 item-l-8 content-copy text-main-color">
+      <div class="grid-row justify-center container">
+        <div class="grid-item item-s-12 item-m-10 content-copy text-main-color">
           <?php the_content(); ?>
         </div>
       </div>

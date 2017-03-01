@@ -7,6 +7,6 @@ function main_class() {
   }
 
   if( is_single() || is_front_page() ) {
-    return 'background-seconf-color';
+    return 'background-second-color';
   }
 }

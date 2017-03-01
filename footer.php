@@ -1,4 +1,4 @@
-  <footer id="footer" class="background-main-color padding-top-small padding-bottom-small text-second-color">
+  <footer id="footer" class="padding-top-small padding-bottom-small text-second-color">
     <div class="container">
       <div class="grid-row">
         <div class="logo grid-item item-s-12:w

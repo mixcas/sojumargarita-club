@@ -1229,7 +1229,7 @@ h3,
   background-color: #3b5998;
 }
 .highlight {
-  padding: 9px;
+  padding: 9px 0;
   box-shadow: 15.299999999999999px 0 0 var(--fourth-color), -15.299999999999999px 0 0 var(--fourth-color);
 }
 .content-copy > * {

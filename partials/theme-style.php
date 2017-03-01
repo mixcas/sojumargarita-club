@@ -8,6 +8,10 @@ $theme_color_fourth = IGV_get_option( '_igv_site_options', '_igv_theme_color_fou
 
 ?>
 <style>
+:root {
+  --fourth-color: <?php echo $theme_color_fourth; ?>;
+}
+
 .background-main-color {
   background: <?php echo $theme_color_main; ?>;
 }
@@ -53,6 +57,10 @@ $theme_color_fourth = IGV_get_option( '_igv_site_options', '_igv_theme_color_fou
 
 html {
   text: <?php echo $theme_color_second; ?>;
+}
+
+.highlight {
+  background-color: <?php echo $theme_color_fourth; ?>;
 }
 
 </style>

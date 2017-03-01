@@ -12,12 +12,7 @@ if( have_posts() ) {
 ?>
 
     <article <?php post_class('margin-bottom-basic text-second-color'); ?> id="post-<?php the_ID(); ?>">
-      <div class="cover-photo-holder grid-row justify-center align-items-end margin-bottom-small">
-        <div class="cover-photo" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
-        <div class="grid-item item-s-12 item-l-9 text-align-center">
-          <h1 class="margin-top-tiny margin-bottom-basic drop-shadow font-larger"><?php the_title(); ?></h1>
-        </div>
-      </div>
+    <?php get_template_part('partials/cover-photo'); ?>
 
 
       <div class="grid-row justify-center container">

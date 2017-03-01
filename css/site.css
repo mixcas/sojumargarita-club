@@ -1267,6 +1267,10 @@ button,
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+}
+#header .social-icon svg {
+  width: 24px;
 }
 .home #header {
   display: none;
@@ -1279,9 +1283,6 @@ button,
   width: 100%;
   position: absolute;
   top: -2px;
-}
-.social-icon svg {
-  width: 24px;
 }
 .cover-photo-holder {
   width: 100%;
@@ -1339,6 +1340,9 @@ button,
   position: absolute;
   bottom: 5px;
   right: 0;
+}
+#footer .social-icon svg {
+  width: 44px;
 }
 .content-copy i {
   font-style: italic;

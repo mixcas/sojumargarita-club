@@ -4,7 +4,6 @@ $facebook_app_id = IGV_get_option('_igv_site_options', '_igv_og_fb_app_id');
 
 if (!empty($facebook_app_id)) {
 ?>
-t
 <script>
 	window.fbAsyncInit = function() {
 		FB.init({

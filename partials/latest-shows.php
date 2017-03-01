@@ -78,7 +78,7 @@ if( $shows->have_posts() ) {
 <?php
       $cover = get_post_meta( get_the_ID(), '_igv_cover_photo_id', 1 );
       if ($cover) {
-        echo wp_get_attachment_image($cover, 'l-4');
+        echo wp_get_attachment_image($cover, 'l-3');
       }
 ?>
         </a>

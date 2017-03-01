@@ -1301,6 +1301,13 @@ button,
   background-position: center;
   z-index: -1;
 }
+.home .cover-photo-holder {
+  height: 100vh;
+  z-index: 1;
+}
+.home .cover-photo {
+  z-index: 0;
+}
 #last-show {
   transition: background 500ms;
 }

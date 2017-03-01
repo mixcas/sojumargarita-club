@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main id="main-content background-second-color">
+<main id="main-content" class="background-second-color">
   <section id="posts">
 
 <?php

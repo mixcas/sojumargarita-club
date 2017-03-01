@@ -1234,6 +1234,9 @@ h3,
   width: 100%;
   display: block;
 }
+.content-copy img {
+  width: auto;
+}
 .content-copy a {
   text-decoration: underline;
 }

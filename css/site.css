@@ -1229,7 +1229,7 @@ h3,
   background-color: #3b5998;
 }
 .content-copy > * {
-  margin: 36px auto;
+  margin: 36px 0;
   max-width: 100%;
   width: 100%;
   display: block;

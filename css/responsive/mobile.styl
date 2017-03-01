@@ -1,4 +1,10 @@
 // DEFAULTS
+.background-color-twitter
+  background-color: $color-twitter
+
+.background-color-facebook
+  background-color: $color-facebook
+
 .content-copy
   & > *
     margin:  $gutter * 2 auto
@@ -17,9 +23,17 @@ button,
   text-transform: uppercase
   padding: $margin-tiny $margin-small
   margin: $margin-tiny 0
-  border: none
+  border: 0
 
+// SHARE BUTTONS
+.share-button
+  display: flex
 
+  svg
+    width: 18px
+    height: 18px
+    display: inline
+    fill: $color-white
 
 // HEADER
 #header

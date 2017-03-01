@@ -12,15 +12,29 @@ if( have_posts() ) {
 ?>
 
     <article <?php post_class('margin-bottom-basic text-second-color'); ?> id="post-<?php the_ID(); ?>">
-      <div class="cover-photo grid-row justify-center align-items-end margin-bottom-basic" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+      <div class="cover-photo grid-row justify-center align-items-end margin-bottom-small" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <div class="grid-item item-s-12 item-l-9 text-align-center">
           <h1 class="margin-top-tiny margin-bottom-basic drop-shadow font-larger"><?php the_title(); ?></h1>
         </div>
       </div>
 
+
       <div class="grid-row justify-center container">
         <div class="grid-item item-s-12 item-l-9 content-copy text-main-color">
           <?php the_content(); ?>
+        </div>
+      </div>
+
+      <div class="grid-row justify-center container">
+        <div class="grid-item item-s-12 item-m-3 margin-bottom-tiny">
+          <a class="background-color-facebook share-button justify-center padding-top-tiny padding-bottom-tiny" href="#" onclick="Site.Share.onFB()">
+            <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/facebook_share.svg'); ?></a>
+          </a>
+        </div>
+        <div class="grid-item item-s-12 item-m-3 margin-bottom-tiny">
+          <a class="background-color-twitter share-button justify-center padding-top-tiny padding-bottom-tiny" href="#" onclick="Site.Share.onTW()">
+            <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/twitter_share.svg'); ?></a>
+          </a>
         </div>
       </div>
 

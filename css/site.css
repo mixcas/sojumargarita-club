@@ -1222,6 +1222,12 @@ h3,
 .font-size-h3 {
   font-size: 28px;
 }
+.background-color-twitter {
+  background-color: #0084b4;
+}
+.background-color-facebook {
+  background-color: #3b5998;
+}
 .content-copy > * {
   margin: 36px auto;
   max-width: 100%;
@@ -1239,7 +1245,18 @@ button,
   text-transform: uppercase;
   padding: 9px 18px;
   margin: 9px 0;
-  border: none;
+  border: 0;
+}
+.share-button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.share-button svg {
+  width: 18px;
+  height: 18px;
+  display: inline;
+  fill: #fff;
 }
 #header {
   width: 100%;

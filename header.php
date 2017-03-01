@@ -21,6 +21,7 @@ get_template_part('partials/seo');
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <?php } ?>
   <?php debug_page_request(); ?>
+  <?php get_template_part('partials/header-scripts'); ?>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(main_class()); ?>>

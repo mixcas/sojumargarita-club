@@ -2,13 +2,17 @@
 $twitter = IGV_get_option('_igv_site_options', '_igv_socialmedia_twitter');
 
 if ($twitter) {
-  echo '<meta name="twitter:site" value="' . $twitter . '">';
+?>
+  <meta name="twitter:site" value="<?php echo $twitter; ?>">';
+<?php
 }
 
 $fbAppId = IGV_get_option('_igv_site_options', '_igv_og_fb_app_id');
 
 if ($fbAppId) {
-  echo '<meta name="fb:app_id" value="' . $fbAppId . '">';
+?>
+  <meta property="fb:app_id" content="<?php echo $fbAppId; ?>">
+<?php
 }
 
 ?>

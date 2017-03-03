@@ -1,8 +1,7 @@
-  <footer id="footer" class="padding-top-small padding-bottom-small text-second-color">
+  <footer id="footer" class="padding-top-small padding-top-basic padding-bottom-small text-second-color">
     <div class="container">
       <div class="grid-row">
-        <div class="logo grid-item item-s-12:w
- margin-bottom-small">
+        <div class="logo grid-item item-s-6 margin-bottom-small">
           <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo.svg'); ?>
         </div>
       </div>

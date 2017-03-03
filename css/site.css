@@ -693,6 +693,7 @@ a > img {
   vertical-align: top;
 }
 svg {
+  max-width: 100%;
   fill: #fff;
 }
 h1,

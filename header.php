@@ -29,25 +29,33 @@ get_template_part('partials/seo');
 
 <section id="main-container">
 
-    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold">
+    <header id="header" class="padding-top-small padding-bottom-small drop-shadow text-second-color font-italic font-bold font-size-menu">
+      <h1 class="u-visuallyhidden"><?php bloginfo('name'); ?></h1>
       <div class="container">
         <div class="grid-row">
 
-          <div class="grid-item item-m-3">
+          <div class="grid-item item-s-4 item-m-5 desktop-hide">
+            <div class="logo">
+              <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo.svg'); ?></a>
+            </div>
+          </div>
+
+          <div class="grid-item item-s-5 item-m-3 medium-hide mobile-hide">
             <h1 class="u-visuallyhidden"><?php bloginfo('name'); ?></h1>
             <div class="logo">
               <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/logo_horizontal.svg'); ?></a>
             </div>
           </div>
 
-          <div class="grid-item item-m-2 offset-m-1">
+
+          <div class="grid-item item-s-3 item-m-3 item-l-2 offset-s-1">
             <a href="<?php echo home_url('/noticias'); ?>">Noticias</a></li>
           </div>
-          <div class="grid-item item-m-2">
+          <div class="grid-item item-s-4 item-m-3 item-l-2">
             <a href="<?php echo home_url('/show'); ?>">Episodios</a>
           </div>
 
-          <div class="grid-item item-m-3 offset-m-1">
+          <div class="grid-item item-m-3 offset-m-1 mobile-hide medium-hide">
             <a class="social-icon" href="https://www.youtube.com/channel/UCXxiO5-SXm-1or2dcB-4qXQ" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/youtube_logo.svg'); ?></a>
             <a class="social-icon" href="http://facebook.com/sojumargaritaclub/" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/fb_logo.svg'); ?></a>
             <a class="social-icon" href="https://open.spotify.com/user/sojumargaritaclub/playlist/2yPxW7XUH6jhNXgqYZQWKY" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/spotify_logo.svg'); ?></a>

@@ -11,7 +11,6 @@
 
 meyer-reset()
 box-sizing-reset()
-normalize()
 
 // ******************************************************
 
@@ -51,6 +50,7 @@ $color-twitter = rgb(0, 132, 180)
 
 html
   font-family: 'Graphik'
+  color: $color-white
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: auto
 
@@ -60,6 +60,9 @@ img
 
 a > img
   vertical-align: top
+
+svg
+  fill: white
 
 // HEADERS
 h1, h2, h3, h4, h5, h6
@@ -74,18 +77,14 @@ h1, h2
 .helvetica
   font-family: 'Helvetica'
 
-.mobile-only
-  display: initial !important
-
-.desktop-only,
-.medium-only
+.mobile-hide
   display: none !important
 
 // ******************************************************
 
 // MEDIA QUERIES
 
-$gutter = 18px
+$gutter = 12px
 
 $margin-micro = ($gutter / 3)
 $margin-tiny = ($gutter / 2)
@@ -94,16 +93,11 @@ $margin-basic = ($gutter * 2)
 $margin-mid = ($gutter * 3.5)
 $margin-large = ($gutter * 5)
 
-$font-size-basic = 22px
-$font-size-h1 = 38px //28
-$font-size-h2 = 34px
-$font-size-h3 = 28px
-
 grid(96%, $gutter, s)
 
 space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
-font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
+font-sizes()
 
 @import 'responsive/mobile'
 
@@ -118,19 +112,18 @@ font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
   $margin-mid = ($gutter * 3.5)
   $margin-large = ($gutter * 5)
 
-  $font-size-basic = 14px
-
   space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
   grid(680px, $gutter, m)
 
-  font-size($font-size-basic)
+  $font-size-basic = 26px
+  font-sizes($font-size-basic, 1.25)
 
-  .mobile-only
+  .mobile-hide
+    display: inherit !important
+
+  .medium-hide
     display: none !important
-
-  .medium-only
-    display: initial !important
 
   @import 'responsive/tablet'
 
@@ -145,19 +138,31 @@ font-sizes($font-size-basic, $font-size-h1, $font-size-h2, $font-size-h3)
   $margin-mid = ($gutter * 3.5)
   $margin-large = ($gutter * 5)
 
-  $font-size-basic = 16px
-
   grid(1000px, $gutter, l)
 
   space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
-  font-size($font-size-basic)
+  $font-size-basic = 22px
+  font-sizes($font-size-basic, 1.25)
 
-  .desktop-only
-    display: initial !important
+  .mobile-hide
+    display: inherit !important
+
+  .medium-hide
+    display: inherit !important
+
+  .grid-item.medium-hide
+    display: block !important
+
+  .desktop-hide
+    display: none !important
+
+
 
   @import 'responsive/desktop'
 
 @media screen and (min-width: 1280px)
 
   grid(1200px)
+
+  font-sizes($font-size-basic, 1.75)

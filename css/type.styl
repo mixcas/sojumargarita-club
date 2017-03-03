@@ -21,9 +21,6 @@ $font-serif = font-stack('Georgia');
 // ******************************************************
 
 // VARIABLES
-
-$font-size-larger = 3rem
-
 $font-leading-basic = 1.35
 $font-leading-tighter = 1.15
 $font-leading-larger = 1.45
@@ -51,9 +48,6 @@ p
 
 .font-serif
   font-family: $font-serif
-
-.font-larger
-  font-size: $font-size-larger
 
 .font-italic
   font-style: italic
@@ -97,31 +91,14 @@ p
   a
     text-decoration: underline
 
-font-sizes($size-basic = 15px, $size-h1 = false, $size-h2 = false, $size-h3 = false, $size-h4 = false, $size-h5 = false, $size-h6 = false)
+font-sizes($size-basic = 22px, $modulator = 1)
 
   html
     font-size: $size-basic
 
-  if ($size-h1)
-    h1, .font-size-h1
-      font-size: $size-h1
+  .font-larger
+    font-size: $modulator * 1.6rem
 
-  if ($size-h2)
-    h2, .font-size-h2
-      font-size: $size-h2
+  .font-size-menu
+    font-size: $modulator * 0.8rem
 
-  if ($size-h3)
-    h3, .font-size-h3
-      font-size: $size-h3
-
-  if ($size-h4)
-    h4, .font-size-h4
-      font-size: $size-h4
-
-  if ($size-h5)
-    h5, .font-size-h5
-      font-size: $size-h5
-
-  if ($size-h6)
-    h6, .font-size-h6
-      font-size: $size-h6

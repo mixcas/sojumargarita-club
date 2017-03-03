@@ -15,7 +15,7 @@ if( have_posts() ) {
     <?php get_template_part('partials/cover-photo'); ?>
 
 
-      <div class="grid-row justify-center container">
+      <div class="grid-row justify-center margin-top-small container">
         <div class="grid-item item-s-12 item-l-9 content-copy text-main-color">
           <?php the_content(); ?>
         </div>

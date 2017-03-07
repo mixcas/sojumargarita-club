@@ -8,6 +8,7 @@
       <div class="grid-row">
         <div class="grid-item item-s-12 item-m-9">
           <p><?php bloginfo('description'); ?></p>
+          <p><a href="javascript:window.location.href='mailto:' + atob('<?= base64_encode("hola@sojumargarita.club") ?>')" style="unicode-bidi: bidi-override; direction: rtl;"><?= strrev('hola@sojumargarita.club') ?></a></p>
         </div>
         <div class="grid-item item-s-12 item-m-3 text-align-right">
           <a class="social-icon" href="https://www.youtube.com/channel/UCXxiO5-SXm-1or2dcB-4qXQ" target="_blank" rel="nofollow"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/youtube_logo.svg'); ?></a>

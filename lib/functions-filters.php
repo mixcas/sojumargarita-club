@@ -56,15 +56,15 @@ add_filter('the_content', 'filter_ptags_on_images');
 /**
 * Filter for adding wrappers around embedded objects
 */
-function responsive_embeds( $content ) {
- $content = preg_replace( "/<object/Si", '<div class="u-video-embed-container"><object', $content );
- $content = preg_replace( "/<\/object>/Si", '</object></div>', $content );
+function responsive_embeds($html, $url, $attr, $post_id) {
+  if (strpos($html, 'mixcloud') !== false) {
+    $provider = 'mixcloud';
+  } else if (strpos($html, 'soundcloud') !== false) {
+    $provider = 'soundcloud';
+  }
 
- /**
-	* Added iframe filtering, iframes are bad.
-	*/
- $content = preg_replace( "/<iframe.+?src=\"(.+?)\"/Si", '<div class="u-video-embed-container"><iframe src="\1" frameborder="0" allowfullscreen>', $content );
- $content = preg_replace( "/<\/iframe>/Si", '</iframe></div>', $content );
- return $content;
+  return '<div class="u-embed-container ' . $provider . '">' . $html . '</div>';
 }
-add_filter( 'the_content', 'responsive_embeds' );
+if ( ! is_admin() ) {
+  add_filter('embed_oembed_html', 'responsive_embeds', 99, 4 );
+}

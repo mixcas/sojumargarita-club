@@ -683,7 +683,7 @@ p a {
   text-decoration: underline;
 }
 html {
-  font-family: 'Graphik';
+  font-family: 'Graphik', sans-serif;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;

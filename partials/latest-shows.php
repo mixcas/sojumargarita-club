@@ -33,12 +33,12 @@ if( $shows->have_posts() ) {
 
       if ($playlist_id) {
 ?>
-             <button id="play-button" class="button u-pointer medium-only">Play</button>
+             <a id="play-button" class="button u-pointer mobile-hide">Play</a>
 <?php
       }
       if ($playlist_link) {
 ?>
-             <a id="play-link" class="button helvetica mobile-only" href="<?php echo $playlist_link; ?>">Play</a>
+             <a id="play-link" class="button helvetica medium-hide desktop-hide" href="<?php echo $playlist_link; ?>">Play</a>
 <?php
       }
 ?>
@@ -53,7 +53,7 @@ if( $shows->have_posts() ) {
 ?>
       <div id="playlist-container" class"grid-row">
         <div class="grid-item item-s-12">
-          <div class="u-video-embed-container">
+          <div class="u-embed-container">
             <iframe id="playlist-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=<?php echo $playlist_id; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>

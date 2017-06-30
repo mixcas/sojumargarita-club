@@ -57,6 +57,8 @@ add_filter('the_content', 'filter_ptags_on_images');
 * Filter for adding wrappers around embedded objects
 */
 function responsive_embeds($html, $url, $attr, $post_id) {
+  $provider = '';
+
   if (strpos($html, 'mixcloud') !== false) {
     $provider = 'mixcloud';
   } else if (strpos($html, 'soundcloud') !== false) {
